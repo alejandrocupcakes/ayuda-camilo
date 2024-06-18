@@ -44,7 +44,7 @@ public class UltimoInstrumento {
         PromedioFinal = PromedioFinal / Estudiante;
         JOptionPane.showMessageDialog(null, "El promedio toral de las nota son: "+PromedioFinal);
         for (int i = 0; i < Estudiante; i++) {
-            lista += ("El estudiante" + i + " ha sacado un promedio de "+promedio.get(i)+"\n"); 
+            lista += ("El estudiante" + i + " ha sacado un promedio de "+promedios.get(i)+"\n"); 
         }
         JOptionPane.showMessageDialog(null, lista);
     }
