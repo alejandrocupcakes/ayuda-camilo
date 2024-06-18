@@ -6,20 +6,20 @@ import javax.swing.JOptionPane;
 public class UltimoInstrumento {
     public static void main(String[] args) {
         int Estudiante = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la cantidad de estudiantes")), aprovados=0, reprovados=0, recuperar=0;
-        ArrayList<ArrayList<Double>> nota = new ArrayList<ArrayList<Double>>();
+        ArrayList<ArrayList<Double>> array = new ArrayList<ArrayList<Double>>();
         ArrayList<Double> promedios = new ArrayList<Double>(), arrayX = new ArrayList<Double>();
         for (int i = 1; i <= Estudiante; i++) {
             arrayX.clear();
             for (int j = 1; j <= 3; j++) {
-                double notas = Double.parseDouble(JOptionPane.showInputDialog("Ingresar la nota "+j+" del estudiante: "+i));
-                if (notas >= 0 && notas <= 5) {
-                    arrayX.add(notas);
+                double arrays = Double.parseDouble(JOptionPane.showInputDialog("Ingresar la nota "+j+" del estudiante: "+i));
+                if (arrays >= 0 && arrays <= 5) {
+                    arrayX.add(arrays);
                 } else {
                     JOptionPane.showMessageDialog(null, "La nota debe ser entre 1 y 5");
                     System.exit(0);
                 }
             }
-            nota.add(arrayX);
+            array.add(arrayX);
             promedios.add((arrayX.get(0) + arrayX.get(1) + arrayX.get(2)) / 3);
         }
         JOptionPane.showMessageDialog(null, "Se han validado "+Estudiante+" estudiantes");
